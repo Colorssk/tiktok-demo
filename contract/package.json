@@ -15,5 +15,8 @@
     "hardhat-gas-reporter": "^1.0.9",
     "solidity-coverage": "^0.8.2",
     "typechain": "^8.1.0"
+  },
+  "dependencies": {
+    "hardhat": "^2.11.2"
   }
 }
