@@ -14,6 +14,7 @@ async function main() {
 
   await tiktokContract.deployed();
 
+  // 0x7eb0d429eA2221B99b5FEbA41FDDf033A5eE3F2f 已经部署的地址
   console.log(
     `has deployed to  ${tiktokContract.address}`
   );
