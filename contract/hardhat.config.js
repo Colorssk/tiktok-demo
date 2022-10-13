@@ -1,8 +1,27 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-truffle5");
+require("@nomiclabs/hardhat-ethers");
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   defaultNetwork: "goerli",
-  solidity: "0.8.9",
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.9"
+      },
+      {
+        version: "0.6.0",
+      },
+      {
+        version: "0.6.2",
+      }
+    ],
+    overrides: {
+      "contracts/ValuableToken": {
+        version: "0.6.0",
+      }
+    }
+  },
   etherscan: {
     apiKey: {
       goerli: 'X7JW6ECNQVGV3MWA2YX8B12QYSPIC1BA2G'
